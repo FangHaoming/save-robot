@@ -6,5 +6,17 @@ export default defineConfig({
   base: './',
   server: {
     host: true
+  },
+  build: {
+    chunkSizeWarningLimit: 1600,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          phaser: ['phaser'],
+          vendor: ['react', 'react-dom'],
+          // 可以添加更多的分组
+        }
+      }
+    }
   }
 })
