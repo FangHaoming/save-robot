@@ -18,11 +18,11 @@ export default class GameScene extends Phaser.Scene {
 
   preload() {
     // 加载游戏资源
-    this.load.image('background', 'assets/background.svg');
-    this.load.image('player', 'assets/player.svg');
-    this.load.image('enemy', 'assets/enemy.svg');
-    this.load.image('joystick', 'assets/joystick.svg');
-    this.load.image('button', 'assets/button.svg');
+    this.load.image('background', './assets/background.svg');
+    this.load.image('player', './assets/player.svg');
+    this.load.image('enemy', './assets/enemy.svg');
+    this.load.image('joystick', './assets/joystick.svg');
+    this.load.image('button', './assets/button.svg');
   }
 
   create() {
